@@ -42,19 +42,19 @@
     <main class="forms">
         <form action="/" method="POST" class="crear-registro">
             <div class="datos-reg">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" class="control">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" class="control"  required>
             </div>
             <div class="datos-reg">
-                <input type="text" id="usuario" name="usuario" placeholder="Nombre de Usuario" class="control">
+                <input type="text" id="usuario" name="usuario" placeholder="Nombre de Usuario" class="control" required>
             </div>
             <div class="datos-reg">
-                <input type="email" id="email" name="email"placeholder="Correo Electrónico" class="control">
+                <input type="email" id="email" name="email"placeholder="Correo Electrónico" class="control" required>
             </div>
             <div class="datos-reg">
-                <input type="date" id="fechanac" name="fechanac"/>
+                <input type="date" id="fechanac" name="fechanac" required/>
             </div>
             <div class="datos-reg">
-                <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio" class="control">
+                <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio" class="control" required>
             </div>    
             <div class="datos-reg">
                 <label>Perfil</label>
@@ -65,10 +65,10 @@
             </div>
 
             <div class="datos-reg">
-                <input type="password" id="contrasenia" name="contrasenia" placeholder="Constraseña" class="control">
+                <input type="password" id="contrasenia" name="contrasenia" placeholder="Constraseña" class="control" required>
             </div>
             <div class="datos-reg">
-                <input type="confcontrasenia" id="confcontrasenia" name="confcontrasenia"placeholder="Confirmar Contraseña" class="control">
+                <input type="confcontrasenia" id="confcontrasenia" name="confcontrasenia"placeholder="Confirmar Contraseña" class="control" required>
             </div> 
             <label for="categoria"class="intereses2">Intereses</label>  
             <div class="intereses">           
