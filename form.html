@@ -1,0 +1,54 @@
+<form action="/" method="POST">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Lionel Andres Messi">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Lionel@gmail.com">
+            </div>
+            <div>
+                <label for="contrasenia">Contraseña</label>
+                <input type="contrasenia" id="contrasenia" name="contrasenia">
+            </div>            
+            <div>
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" placeholder="descripcion del usuario" name="descripcion"></textarea>
+            </div>
+            <div>
+                <label for="puesto">Puesto</label>
+                <select>
+                    <option value="" selected>Seleccione un puesto</option>
+                    <option value="1">Arquero</option>
+                    <option value="2">Defensor</option>
+                    <option value="3">Mediocampista</option>
+                    <option value="4">Delantero</option>
+                </select>
+            </div>            
+            <div>
+                <label for="archivo">Archivo:</label>
+                <input type="file" id="archivo" name="archivo" placeholder="Seleccionar archivo" accept=".sql"
+            </div>
+            <div>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" min="2020-12-10" max="2022-12-15">
+            </div>
+            <div>
+                <label>¿Titular o suplente?</label>
+                <input type="radio" id="titular" name="condicion>"
+                <label for="titular">Titular</label>
+                <input type="radio" id="suplente" name="condicion>"
+                <label for="suplente">Suplente</label>
+            </div>
+            <div>
+                <label>Pierna habil</label>
+                <input type="checkbox" id="zurdo" name="pierna>"
+                <label for=zurda">Zurdo</label>
+                <input type="checkbox" id="derecho" name="pierna>"
+                <label for="derecho">Derecho</label>
+            </div>
+            <div>
+                <button class="botones" type="reset">Borrar</button>
+                <button class="botones" type="submit">Cargar</button>
+            </div>
+        </form>

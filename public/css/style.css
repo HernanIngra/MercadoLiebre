@@ -1,0 +1,378 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    font-size: 12px;
+    width: 100vw;
+}
+.main-header {
+    background-color: #EAC926;
+    opacity: 100%;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    z-index: 1;
+
+}
+.main-header-top-bar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo {
+    width: 40vw;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+
+.burger-menu {
+    background-color: #0044aa;
+    color: #fff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 30px;
+    margin: auto; 
+} 
+.main-nav-bar {
+    display: none
+}
+.main-nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav-bar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+header form{
+    background-color: #fff;
+    border-radius: 3px;
+    color: darkgrey;
+    margin-top: 5px;
+    width: 35vw;
+    
+
+}
+header form input{
+    height: 5%;
+    font-size: 16px;
+    width: 85%;
+}
+header form input i{
+    border: 0px;
+    width:7%
+}
+main{
+    margin-top: 200px;
+}
+    main section.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+    main section img {
+    width: 100vw;
+    margin: auto;
+}
+main section h4.titulares {
+    font-size: 24px;
+    margin-left: 3px;
+    padding: 10px;
+}
+main section article.producto{
+    border: solid 1px #ebebeb;
+    margin:auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: all 450ms;
+}
+
+
+main section article.producto picture img{
+    width: 90vw
+}
+main section article div.caja-prod{
+    text-align: left;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+
+}
+
+main section article div.caja-prod p.truck{
+    color:#39b54a ;
+    width: 30px;
+    height: 30px;
+    border: solid #39b54a 1px;
+    border-radius: 50%;
+    padding: 5px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top:-15px
+}
+main section article div p.truck i{
+    font-size: 16px;
+    transition: all 250ms;
+}
+
+
+
+.precio-desc{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.precio-desc p{
+    padding: 5px;
+}
+
+main section article div p.precio{
+    font-size: 18px
+}
+main section article div p.desc{
+    font-size: 16px;
+    color: #39b54a;
+    margin-bottom: 12px;
+}
+main section article div p.descripcion{
+    font-size: 16px;
+    position: absolute;
+    bottom: 5px;
+    display: none;
+    transition: all 450ms;
+
+}
+main section article.producto:hover{
+    box-shadow: 2px 2px 2px 2px lightgrey;
+
+}
+
+
+
+footer article, footer div {
+    text-align: center;
+    margin: 15px;
+}
+
+footer article h4 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+footer article p{
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+footer article i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#0022AA
+}
+.crear-registro{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+.datos-reg, .intereses{
+    padding: 7px;
+    font-size: 18px;
+    margin: auto;
+    width: 450px; 
+    display: block;
+    text-align: center;
+}
+.intereses{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 120px;
+    align-items: center;
+}
+.intereses2{
+    margin:auto;
+    font-size: 19px;
+}
+
+.botones{
+    background-color:#0044aa;
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    font-size: 20ps;
+    color: #fff;
+    transition: all 450ms;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;  
+}
+:visited{
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.control{
+    width: 95%;
+    padding: 8px 8px;
+    border-radius: 8px;
+    align-items: center;
+}
+main.forms{
+    margin-top: 260px;
+
+}
+
+@media (min-width: 362px){
+    header{
+       width: 95vw
+    }
+    .main-header-top-bar{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-header{
+        left: 50%;
+        transform: translate(-50%, 0);
+    
+    }
+    main section article div p.truck i:hover{
+       transform: rotate(-90deg);
+    }
+    main{
+        margin-top: 225px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .copy-header{
+        max-width: 60%;
+        text-align: center;
+    }
+    .main-nav-bar{
+        display: flex;
+        max-width: 95vw;
+        font-size: 12px; 
+    }    
+    .main-nav-bar ul{
+        display: flex;
+    }
+
+    .main-nav-bar li{
+        margin: 0 5px;
+    }
+    main section div.secciones{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* Esto no me está funcionando */
+    main section article div.caja-prod p.descripcion{
+       display: contents;
+       color: black;
+       
+    }
+
+    main section article picture img{
+       
+        max-width: 45vw;
+        }
+
+    footer div{
+        text-align: left;
+    }
+    footer article i:hover{
+        color:#39b54a
+    }
+    footer section{
+        display: flex;
+
+    }
+
+    .botones:hover{
+        background-color:#0022AA
+    }
+    }
+@media (min-width: 770px){
+        .logo{
+            width: 40%;
+        }
+
+        main header, .main-header-top-bar, .main-nav-bar{
+            max-width: 1200px;
+            margin: auto;
+
+        }
+        .main-header-top-bar{
+            align-items:center;
+        }
+        .main-nav-bar{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-nav-bar li{
+            margin: 0 10px;
+        }
+        .main-nav-bar a{
+            font-size:19px;
+        }
+        .copy-header{
+            max-width: none;
+            margin: 0;
+        }
+        main section img{
+            max-width: 1200px;
+        }
+        main section article picture img{
+            max-width: 21vw;
+            max-width: 190px;
+        }
+        main section div.secciones{
+            max-width: 1200px;
+            margin: auto;
+    
+        }
+        main section h4.titulares{
+            max-width: 1200px;
+            margin: auto;
+        }
+
+    }
+
+@media (min-width:1200px) {
+    main section article picture img{
+        max-width: 280px;
+    }
+    footer{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
