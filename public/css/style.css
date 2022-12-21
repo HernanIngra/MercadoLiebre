@@ -264,9 +264,7 @@ main.forms{
         transform: translate(-50%, 0);
     
     }
-    main section article div p.truck i:hover{
-       transform: rotate(-90deg);
-    }
+
     main{
         margin-top: 225px;
     }
@@ -293,12 +291,7 @@ main.forms{
         display: flex;
         flex-wrap: wrap;
     }
-    /* Esto no me está funcionando */
-    main section article div.caja-prod p.descripcion{
-       display: contents;
-       color: black;
-       
-    }
+
 
     main section article picture img{
        
@@ -308,17 +301,12 @@ main.forms{
     footer div{
         text-align: left;
     }
-    footer article i:hover{
-        color:#39b54a
-    }
-    footer section{
+        footer section{
         display: flex;
 
     }
 
-    .botones:hover{
-        background-color:#0022AA
-    }
+
     }
 @media (min-width: 770px){
         .logo{
@@ -329,6 +317,15 @@ main.forms{
             max-width: 1200px;
             margin: auto;
 
+        }
+        footer article i:hover{
+            color:#39b54a
+        }
+        .botones:hover{
+            background-color:#0022AA
+        }
+        article.producto:hover .descripcion{
+            display: block;
         }
         .main-header-top-bar{
             align-items:center;
@@ -348,6 +345,9 @@ main.forms{
             max-width: none;
             margin: 0;
         }
+        main section article:hover .truck i{
+            transform: rotate(-90deg);
+         }
         main section img{
             max-width: 1200px;
         }
